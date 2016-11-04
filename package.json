@@ -1,0 +1,14 @@
+{
+  "name": "generator-test",
+  "version": "0.1.0",
+  "description": "Testing a generator",
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "^0.24.1"
+  }
+}
