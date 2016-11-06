@@ -1,17 +1,23 @@
 {
-  "name": "generator-test",
-  "version": "0.1.0",
-  "description": "Testing a generator",
+  "name": "generator-stylzz",
+  "version": "0.0.1",
+  "description": "Yeoman generator for Angular Projects",
   "license": "MIT",
   "main": "app/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/e-stylzz/Yeoman-Generator-Test"
+    "url": "e-stylzz/generator-test"
   },
   "author": {
     "name": "Eric Barb",
     "email": "",
-    "url": "https://github.com/e-stylzz/"
+    "url": "https://github.com/e-stylzz"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
   },
   "files": [
     "app"
@@ -21,7 +27,17 @@
   ],
   "dependencies": {
     "chalk": "^1.1.3",
-    "yeoman-generator": "^0.24.1",
-    "yosay": "^1.2.1"
+    "lodash": "^4.7.0",
+    "underscore.string": "^3.0.3",
+    "yargs": "^4.3.2",
+    "yeoman-generator": "^0.22.5",
+    "yosay": "^1.1.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-bump": "^2.1.0",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-task-listing": "^1.0.1",
+    "gulp-util": "^3.0.7"
   }
 }

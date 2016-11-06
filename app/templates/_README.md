@@ -1,8 +1,10 @@
-# generator-stylzz
+# <%= appName %>
 
-Create an Angular application
+**Generated from HotTowel Angular**
 
->Based on John Papa's Hot Towel Generator
+>*Opinionated Angular style guide for teams by [@john_papa](//twitter.com/john_papa)*
+
+>More details about the styles and patterns used in this app can be found in my [Angular Style Guide](https://github.com/johnpapa/angularjs-styleguide) and my [Angular Patterns: Clean Code](http://jpapa.me/ngclean) course at [Pluralsight](http://pluralsight.com/training/Authors/Details/john-papa) and working in teams.
 
 ## Prerequisites
 
@@ -18,34 +20,9 @@ Create an Angular application
     npm install -g bower gulp nodemon
     ```
 
-## QuickStart
+    >Refer to these [instructions on how to not require sudo](https://github.com/sindresorhus/guides/blob/master/npm-global-without-sudo.md)
 
-1. Navigate to directory of installed generator and run:
-    ```bash
-    npm link
-    ```
-
-2. Create a new folder and change directory to it
-    ```bash
-    mkdir myapp
-    cd myapp
-    ```
-
-3. Run the generator
-    ```bash
-    yo stylzz helloWorld
-    ```
-
-## Stylzz Options
-
-### Application Name
- - Pass in the app's name to avoid being prompted for it
-
-    ```bash
-    yo stylzz [appName]
-    ```
-
-## Running Stylzz
+## Running HotTowel
 
 ### Linting
  - Run code analysis using `gulp vet`. This runs jshint, jscs, and plato.
@@ -65,8 +42,8 @@ Create an Angular application
 ### Running the optimized code
  - Run the optimize project from the build folder with `gulp serve-build`
 
-## Exploring Stylzz
-Stylzz Angular starter project
+## Exploring HotTowel
+HotTowel Angular starter project
 
 ### Structure
 The structure also contains a gulpfile.js and a server folder. The server is there just so we can serve the app using node. Feel free to use any server you wish.
@@ -249,13 +226,13 @@ The `blocks.router` module contains a routing helper module that assists in addi
 
 ### Building Production Code
 
-- `gulp html`
+- `gulp optimize`
 
     Optimize all javascript and styles, move to a build folder, and inject them into the new index.html
 
 - `gulp build`
 
-    Copies all fonts, copies images and runs `gulp html` to build the production code to the build folder.
+    Copies all fonts, copies images and runs `gulp optimize` to build the production code to the build folder.
 
 ### Serving Production Code
 
