@@ -95,6 +95,7 @@ var StylzzGenerator = yeoman.Base.extend({
     this.directory('src/client/test-helpers');
 
     this.template('src/client/_index.html', 'src/client/index.html');
+    this.template('src/client/templates-app/core/_constants.js', 'src/client/app/core/constants.js')
 
     this.template('src/server/_app.js', 'src/server/app.js');
     this.template('src/server/_data.js', 'src/server/data.js');
